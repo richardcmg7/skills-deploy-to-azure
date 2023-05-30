@@ -1,5 +1,4 @@
 name: Deploy to staging
-
 on:
   pull_request:
     types: [labeled]
@@ -9,8 +8,8 @@ env:
   ###############################################
   ### Replace <username> with GitHub username ###
   ###############################################
-  DOCKER_IMAGE_NAME: richardcmg7-azure-ttt
-  AZURE_WEBAPP_NAME: richardcmg7-ttt-app
+  DOCKER_IMAGE_NAME: richardc7-azure-ttt
+  AZURE_WEBAPP_NAME: richardc7-ttt-app
   ###############################################
 
 jobs:
