@@ -13,6 +13,8 @@ env:
   ### Replace <username> with GitHub username ###
   ###############################################
   AZURE_WEBAPP_NAME: richardcmg7-ttt-app
+  ### First we need to create resources until deploy.
+  ### At final We are going to delete everything
 
 jobs:
   setup-up-azure-resources:
