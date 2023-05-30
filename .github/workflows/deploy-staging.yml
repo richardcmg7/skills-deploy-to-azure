@@ -8,8 +8,8 @@ env:
   ###############################################
   ### Replace <username> with GitHub username ###
   ###############################################
-  DOCKER_IMAGE_NAME: richardc7-azure-ttt
-  AZURE_WEBAPP_NAME: richardc7-ttt-app
+  DOCKER_IMAGE_NAME: richardcmg7-azure-ttt
+  AZURE_WEBAPP_NAME: richardcmg7-ttt-app
   ###############################################
 
 jobs:
@@ -20,6 +20,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: Setup Node 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
       - name: npm install and build webpack
         run: |
           npm install
